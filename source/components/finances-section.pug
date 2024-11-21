@@ -1,0 +1,50 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      img.finances-section__icon-left(src="images/finances-section-icon-left.png" loading="lazy" width="326" height="446" alt="icon")
+      img.finances-section__icon-right(src="images/finances-section-icon-right.png" loading="lazy" width="246" height="211" alt="icon")
+      h2.finances-section__title.font-w-a-regular.font-s-50.text-up
+        span.color-brown Какую прибыль 
+        br
+        span.color-green приносит одно кафе
+      .swiper-bullet
+        .finances-section__cards.swiper-wrapper
+          .finances-section__card.swiper-slide
+            .finances-section__card-title.font-w-a-regular до 3 месяцев
+            .finances-section__card-line
+            .font-s-18.color-brown понадобится на открытие
+          .finances-section__card.swiper-slide
+            .finances-section__card-title.font-w-a-regular 22 месяца
+            .finances-section__card-line
+            .font-s-18.color-brown средний срок <br> окупаемости
+          .finances-section__card.swiper-slide
+            .finances-section__card-title.font-w-a-regular 25,1%
+            .finances-section__card-line
+            .font-s-18.color-brown рентабельность <br> по чистой прибыли
+          .finances-section__card.swiper-slide
+            .finances-section__card-title.font-w-a-regular 3 250 000 рублей
+            .finances-section__card-line
+            .font-s-18.color-brown средний размер <br> вложений
+          .finances-section__card.swiper-slide
+            .finances-section__card-title.font-w-a-regular 915 000 рублей
+            .finances-section__card-line
+            .font-s-18.color-brown средний размер <br> ежемесячной выручки
+          .finances-section__card.swiper-slide
+            .finances-section__card-title.font-w-a-regular 230 000 рублей
+            .finances-section__card-line
+            .font-s-18.color-brown средний размер <br> ежемесячной прибыли
+        .bullet-pagination
+      img.finances-section__img(src="images/finances-section-img.jpg" loading="lazy" width="760" height="1040" alt="image")
+      .finances-section__bottom
+        .finances-section__bottom-title.font-w-semi-bold.font-s-28
+          | Хотите получить детальные расчёты 
+          br
+          | для вашего города и под ваш бюджет?
+        .finances-section__bottom-text.font-w-medium.font-s-18 Скачайте финансовую модель франшизы «ДИВНЫЙ САД»
+        form.finances-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn(type="submit") скачать
+        .finances-section__agree-wrapper
+          include ../components/agree.pug

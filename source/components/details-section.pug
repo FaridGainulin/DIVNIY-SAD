@@ -1,0 +1,60 @@
+section.details-section
+  .wrapper
+    .details-section__container
+      h2.details-section__title.font-w-a-regular.font-s-50.text-up.color-brown
+        | Ознакомьтесь со всеми 
+        br
+        | процессами 
+        span.color-green лично
+      .details-section__sub-title.font-w-medium.font-s-18
+        | Оставьте заявку, и мы расскажем вам:
+      .details-section__box
+        .swiper-bullet
+          .details-section__cards.swiper-wrapper
+            .details-section__card.swiper-slide
+              img.details-section__card-icon(src="images/details-section-card-icon.svg" loading="lazy" width="24" height="24" alt="icon")
+              .font-s-18
+                | Какие рецепты используем в своей работе
+            .details-section__card.swiper-slide
+              img.details-section__card-icon(src="images/details-section-card-icon.svg" loading="lazy" width="24" height="24" alt="icon")
+              .font-s-18
+                | Какие позиции в меню пользуются 
+                br.no-br
+                | популярностью у гостей
+            .details-section__card.swiper-slide
+              img.details-section__card-icon(src="images/details-section-card-icon.svg" loading="lazy" width="24" height="24" alt="icon")
+              .font-s-18
+                | Как правильно позиционировать 
+                br.no-br
+                | и продвигать кафе
+            .details-section__card.swiper-slide
+              img.details-section__card-icon(src="images/details-section-card-icon.svg" loading="lazy" width="24" height="24" alt="icon")
+              .font-s-18
+                | Как организовать работу персонала
+            .details-section__card.swiper-slide
+              img.details-section__card-icon(src="images/details-section-card-icon.svg" loading="lazy" width="24" height="24" alt="icon")
+              .font-s-18
+                | Как запуститься в кратчайшие сроки 
+                br.no-br
+                | без лишних затрат
+            .details-section__card.swiper-slide
+              img.details-section__card-icon(src="images/details-section-card-icon.svg" loading="lazy" width="24" height="24" alt="icon")
+              .font-s-18
+                | Как вы можете масштабировать свой бизнес
+          .bullet-pagination
+        .details-section__img-wrapper
+          img.details-section__img(src="images/details-section-img.png" loading="lazy" width="1160" height="888" alt="image")
+          img.details-section__icon-left(src="images/details-section-icon-left.png" loading="lazy" width="325" height="445" alt="icon")
+          img.details-section__icon-right(src="images/details-section-icon-right.png" loading="lazy" width="245" height="211" alt="icon")
+      .details-section__bottom
+        .font-w-semi-bold.font-s-28
+          | Заполните форму, чтобы записаться 
+          br
+          span.color-orange на консультацию
+        form.details-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn(type="submit") Записаться
+        .details-section__agree-wrapper
+          include ../components/agree.pug

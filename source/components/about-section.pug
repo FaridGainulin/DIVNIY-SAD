@@ -1,0 +1,76 @@
+section.about-section
+  .out-wrapper.about-section__out-wrapper
+    .wrapper
+      .about-section__container
+        h2.about-section__title.font-w-a-regular.font-s-50.text-up
+          | 11 лет успешно работаем на рынке 
+          br
+          | общественного питания
+        .about-section__sub-title.font-w-semi-bold.font-s-18
+          | «ДИВНЫЙ САД» — это вегетарианское кафе с уникальным меню на основе 
+          br.no-br
+          | аюрведической кулинарии. Мы открылись в 2013 году в г. Елабуга 
+          br.no-br
+          | и сосредоточились на приготовлении полезных блюд с использованием 
+          br.no-br
+          | натуральных продуктов, восточных специй и пряностей.
+        .about-section__box
+          .about-section__main-text
+            | С каждым годом увеличивается 
+            br.no-br
+            | количество людей, которые стремятся 
+            br.no-br
+            | к духовному развитию, практикуют йогу 
+            br.no-br
+            | и переходят на вегетарианское 
+            br.no-br
+            | питание. Учитывая повышенный 
+            br.no-br
+            | интерес людей к этой теме, 
+            br.no-br
+            | а также активную популяризацию 
+            br.no-br
+            | вегетарианской кухни, мы работаем 
+            br.no-br
+            | в максимально актуальной и растущей 
+            br.no-br
+            | нише.
+          .about-section__main-text
+            | Для новых партнёров мы подготовили 
+            br.no-br
+            | пошаговый план по запуску 
+            br.no-br
+            | собственного вегетарианского кафе. 
+            br.no-br
+            | Мы поможем вам выбрать наилучшую 
+            br.no-br
+            | локацию и разработать интересное 
+            br.no-br
+            | меню с вкусными блюдами 
+            br.no-br
+            | и напитками.
+        .about-section__text.font-w-semi-bold.about-section__main-text
+          | Открывая кафе по франшизе, 
+          br.no-br
+          | вы уже на старте получаете готовую 
+          br.no-br
+          | и проверенную годами работы 
+          br.no-br
+          | бизнес-модель, которая позволяет 
+          br.no-br
+          | расти и масштабироваться вместе 
+          br.no-br
+          | с рынком.
+        .about-section__bottom-title.font-w-semi-bold.font-s-28
+          | Ждём ваши вопросы 
+          br.no-br
+          | по франшизе!
+        form.about-section__form(data-feedback-form)
+          textarea.input.input--textarea(type="text" name="answer" autocomplete="off" placeholder="Ваш вопрос")
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn(type="submit") Задать вопрос команде «ДИВНЫЙ САД»
+          .about-section__agree-wrapper
+            include ../components/agree.pug
+        img.about-section__img(src="images/about-section-img.png" loading="lazy" width="1824" height="2076" alt="image")

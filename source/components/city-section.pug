@@ -1,0 +1,25 @@
+section.city-section
+  .out-wrapper.city-section__out-wrapper
+    .wrapper
+      .city-section__container
+        img.city-section__icon(src="images/main-section-icon.png" loading="lazy" width="280" height="285" alt="icon")
+        h2.city-section__title.font-w-a-regular.font-s-50.text-up
+          | Откройте вегетарианское 
+          br.no-br
+          | кафе в своём городе 
+          br.no-br
+          | по франшизе 
+          br.no-br
+          | «ДИВНЫЙ САД»
+        .city-section__sub-title.font-w-bold.font-s-22
+          | Проверьте, свободен ли ваш 
+          br
+          | город для работы
+        form.city-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="city" autocomplete="off" placeholder="Ваш город")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn(type="submit") Проверить
+          .city-section__agree-wrapper
+            include ../components/agree.pug
+        img.city-section__img(src="images/city-section-img.png" loading="lazy" width="1137" height="702" alt="image")
